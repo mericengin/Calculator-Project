@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <input id="display" disabled="disabled">
+        <div class="calculator__keys">
+            <button class="add operator btn" type="button" value="+" onclick="appendToDisplay('+')">+</button>
+            <button class="seven btn" type="button" value="7" onclick="appendToDisplay('7')">7</button>
+            <button class="eight btn" type="button" value="8" onclick="appendToDisplay('8')">8</button>
+            <button class="nine btn" type="button" value="9" onclick="appendToDisplay('9')">9</button>
+            <button class="subtract operator btn" type="button" value="-" onclick="appendToDisplay('-')">-</button>
+            <button class="four btn" type="button" value="4" onclick="appendToDisplay('4')">4</button>
+            <button class="five btn" type="button" value="5" onclick="appendToDisplay('5')">5</button>
+            <button class="six btn" type="button" value="6" onclick="appendToDisplay('6')">6</button>
+            <button class="multiply operator btn" type="button" value="*" onclick="appendToDisplay('*')">*</button>
+            <button class="one btn" type="button" value="1" onclick="appendToDisplay('1')">1</button>
+            <button class="two btn" type="button" value="2" onclick="appendToDisplay('2')">2</button>
+            <button class="three btn" type="button" value="3" onclick="appendToDisplay('3')">3</button>
+            <button class="divide operator btn" type="button" value="/" onclick="appendToDisplay('/')">/</button>
+            <button class="zero btn" type="button" value="0" onclick="appendToDisplay('0')">0</button>
+            <button class="decimal btn" type="button" value="." onclick="appendToDisplay('.')">.</button>
+            <button class="equal btn" type="button" value="=" onclick="calculate()" onkeydown="keyDownCalculate()">=</button>
+            <button class="clear btn" type="button" value="C" onclick="clearDisplay()">C</button>
+        </div>
+    </div>
+
+<script src="./index.js"></script>
+</body>
+</html>
